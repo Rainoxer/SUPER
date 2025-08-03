@@ -1,0 +1,24 @@
+Je veux que tu répondes à chacune de ces questions :
+1- Comment dois-je configurer le nom du topic point cloud qu'utilise rog_map?
+2- Que signifie supporter la cartographie probabiliste avec ray-casting?
+3- Quelle est la différence entre les cartes occupée, inconnue et gonflée?
+4- Comment fonctionne la machine à états FSM de super_planner?
+5- Comment fonctionnent les waypoints et objectifs de navigation de super_planner et mission_planner ?
+6- Si je veux utiliser ce code sur un vrai drone et que je n'ai donc pas besoin du simulateur mars_uav_sim, que dois-je faire?
+7- Mon vrai drone n'aurait pas de lidar mais une caméra stéréo pouvant aussi fournir un point cloud. Est-ce compatible?
+8- Comment suis-je censé lancer tout ça si je n'utilise pas le simulateur mars_uav_sim?
+9- Pourquoi vois-je ROS1 indiqué à divers endroits comme ros1_waypoint_mission.cpp ? Ce repo est sensé être compatible ROS2?
+
+Réponds aux questions suivantes :
+1- Pourquoi le cloud_topic par défault est-il /cloud_registered ? Est-ce un nom de topic courant dans ROS2?
+2- Puis-je utiliser moi-même du ray casting pour détecter les obstacles proches autour de mon drone? Peut-être grâce à l'implémentation existante? Si oui, comment?
+3- Comment suis-je censé interragir avec ce système pour envoyer des instructions? En tant qu'utilisateur ou développeur avec mon propre code, est-ce que tout se fait via le mission planner et si oui comment? Ou faut-il faire autrement?
+4- Est-ce uniquement le waypoint suivant qui est publié sur /planning/click_goal ou bien tous les waypoints en même temps?
+5- Je ne comprends pas bien à quoi sert /planning/click_goal. Où est envoyée la destination finale vers laquelle il faut trouver un chemin? Qui publie quoi sur le topic /planning/click_goal?
+6- Sous quelle forme est envoyée la destination finale à atteindre? Coordonnées GPS?
+7- Pour une utilisation sans le simulateur, comment suis-je censé fournir les topics requis par le système réel?
+8- Que signifie "le point cloud doit être dans le repère monde (world frame), pas le repère du capteur" ?
+9- J'utilise ROS2 Humble. Comment dois-je utiliser ```bash
+bash scripts/select_ros_version.sh ROS2
+``` ? Faut-il l'exécuter dans chaque terminal où je lance un module de ce système?
+
